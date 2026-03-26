@@ -2,8 +2,8 @@
 // src/components/dashboard/CommandPanel.tsx
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { SYLLABUS, FOCUS_MODE_LABELS, computeTopicROI } from '@/lib/utils/constants'
-import { getMasteryLabel, MASTERY_COLOR, buildROIMap } from '@/lib/utils/scoring'
+import { SYLLABUS, FOCUS_MODE_LABELS } from '@/lib/utils/constants'
+import { getMasteryLabel, MASTERY_COLOR, buildROIMap, computeTopicROI } from '@/lib/utils/scoring'
 import { parseMarkdownToHtml } from '@/lib/ai/claude'
 import type { DashboardSummary, StudyRecommendation } from '@/types/domain'
 import type { DbWeakTopic, DbRevisionItem, DbTestRecord, DbTopicMastery, FocusMode } from '@/types/database'
